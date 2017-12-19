@@ -1,0 +1,17 @@
+/*
+Primer Ejemplo
+*/
+body {
+  color: #FFFAD5;
+  background: #105B63;
+  width: 100%;
+  height: 100%;
+}
+.parent{
+    display: table;
+}
+.box {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
