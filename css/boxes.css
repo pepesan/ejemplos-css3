@@ -93,3 +93,21 @@ h2{
     float: left;
     text-align: center;
 }
+
+
+.total{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.cincuenta{
+    box-sizing: border-box;
+    background: red;
+    height: 100px;
+    width: 48%;
+    float: left;
+    text-align: center;
+    border:10px black solid;
+    margin: 1%;
+}
