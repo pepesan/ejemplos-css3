@@ -47,7 +47,48 @@ nav li a:hover {
     }
 }
 /*
+Uso similar al grid de bootstrap
+ */
+.wrapper {
+    display: flex;
+}
+.wrapper > div {
+    font-size: 4vh;
+    color: white;
+    background: hotpink;
+    margin: .1em;
+    padding: .3em;
+    border-radius: 3px;
+    flex: 1;
+}
+.wrapper .wrapper > div {
+    background: pink;
+    color: hotpink;
+}
+.media {
+    display: flex;
+    align-items: flex-start;
+    background: #F6F3EB;
+    padding: 1em;
+    border-radius: 3px;
+    max-width: 24em;
+}
+.media-object {
+    margin-right: 1em;
+}
+.media-body {
+    flex: 1;
+}
+.media-heading {
+    margin: 0 0 .5em;
+}
+
+/*
 Referencias:
 https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Conceptos_Basicos_de_Flexbox
 http://w3.unpocodetodo.info/css3/flex-menu.php
+https://www.quackit.com/css/flexbox/examples/
  */
+
+
+
