@@ -1,0 +1,53 @@
+.box {
+    display: flex;
+}
+.box div{
+    background-color: gray;
+    border: 1px solid red;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.column{
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+/*
+Menu
+ */
+nav {
+    padding: 1em;
+    font-family: Verdana, Geneva, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+}
+nav li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+nav li a:hover {
+    background: tomato;
+    color: white;
+}
+@media screen and (min-width: 480px) {
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+/*
+Referencias:
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Conceptos_Basicos_de_Flexbox
+http://w3.unpocodetodo.info/css3/flex-menu.php
+ */
