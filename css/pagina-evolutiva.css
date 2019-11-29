@@ -47,6 +47,7 @@ Main menu
     margin-left: 10px;
     background-color: #A70121;
     padding: 10px;
+    border-radius: 10px;
 }
 #main_menu ul li a{
     border: 1px solid gray;
@@ -68,9 +69,12 @@ Sección de contenido
     background-color: grey;
     color: white;
     background-color: #EF3E36;
+    border-radius: 10px;
 }
 .main_col h1{
     background-color: #A70121;
+    margin-top: 0;
+    border-radius: 10px;
 }
 .main_col p{
 }
