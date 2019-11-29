@@ -4,7 +4,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
     grid-gap: 10px;
     background-color: #fff;
     color: #444;
@@ -16,6 +16,17 @@ body {
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    margin-top: 20px;
+}
+.box.c{
+    background-color: #00b7f5;
 }
 
 /*

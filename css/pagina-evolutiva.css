@@ -92,12 +92,35 @@ Sección de contenido
 }
 .main_col p{
 }
+/*
 .mi_section .main_col.un_tercio{
     width: 25%;
     float: left;
     padding: 3%;
     margin: 1%;
 }
+*/
+.mi_section{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 1%;
+
+}
+.otra_section{
+    margin-top: 30px;
+     display: grid;
+     grid-template-columns: 28% 69.5%;
+     grid-gap: 1%;
+    margin-left: 1%;
+ }
+
+.mi_section .main_col, .otra_section .main_col{
+    box-sizing: border-box;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+/*
 .mi_section .main_col.un_cuarto{
     width: 19%;
     float: left;
@@ -111,7 +134,7 @@ Sección de contenido
     margin-top: 1%;
     margin-left: 1%;
 }
-
+*/
 
 .main_col h1{
     text-align: center;
@@ -121,15 +144,37 @@ Sección de contenido
 Footer section
  */
 footer{
-    overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
     margin-top: 20px;
     background-color: #A70121;
+    height: 50px;
+    padding-top: 25px;
+    color: white;
 }
 footer div{
-    float: left;
-    margin-left: 40px;
+    margin-right: 20px;
 }
-footer nav{
-    float: right;
-    margin-right: 40px;
+footer div nav ul li{
+    margin-right: 10px;
+}
+.navigation {
+    list-style: none;
+    margin: 0;
+
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+.navigation a:hover {
+    background: #00b7f5;
 }
