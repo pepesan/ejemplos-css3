@@ -1,4 +1,13 @@
+/*
+Fuentes incluidas
+ */
+@font-face {
+    font-family: roboto;
+    src: url("fonts/Roboto-Regular.woff2") format("woff2");
+}
+
 body{
+    font-family: roboto, serif;
     margin: 0;
 }
 /*
@@ -54,6 +63,7 @@ Main menu
 
 }
 #main_menu ul li a{
+    font-family: roboto;
     text-decoration: none;
     color: white;
 }
