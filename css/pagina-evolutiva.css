@@ -178,3 +178,20 @@ footer div nav ul li{
 .navigation a:hover {
     background: #00b7f5;
 }
+
+@media screen and (max-width: 960px) {
+    .mi_section{
+
+        grid-template-columns: 49% 49%;
+        grid-gap: 1%;
+
+    }
+}
+@media screen and (max-width: 768px) {
+    .mi_section{
+
+        grid-template-columns: 99%;
+        grid-gap: 1%;
+
+    }
+}
