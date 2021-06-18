@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="David Vaquero" />
+    <meta name="generator" content="Aptana Studio 3.6.1" />
+    <meta name="copyright" content="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="html, ejemplo xhtml, esqueleto xhtml" />
+    <meta name="description" content="Ejemplo de Esqueleto de XHTML 1.0 Trasitional" />
+    <title>Mi titulo</title>
+    <link rel="stylesheet" href="css/transitions.css" />
+</head>
+<body>
+    <ul>
+        <!--li id="long1">Transición larga, gradual...</li>
+        <li id="fast1">Transición muy rápida...</li-->
+        <li id="delay1">Transición larga de un minuto de retraso...</li>
+        <!--li id="easeout">Usar intervalos de alejamiento...</li>
+        <li id="linear">Usar intervalos lineales...</li>
+        <li id="cubic1">Usar cúbica bézier(0.2, 0.4, 0.7, 0.8)...</li-->
+    </ul>
+    <div class="sidebar">
+        <p><a class="menuButton" href="home">Inicio</a></p>
+        <p><a class="menuButton" href="about">Acerca de</a></p>
+        <p><a class="menuButton" href="contact">Contacto Us</a></p>
+        <p><a class="menuButton" href="links">Vínculos</a></p>
+    </div>
+    <div onclick="runDemo()">
+        <div class="slideRight">¡Esto es una caja!</div>
+    </div>
+    <script>
+        function runDemo() {
+            var el = updateTransition();
+
+            // Configurar un controlador de eventos para invertir la dirección
+            // cuando finalice la transición.
+
+            el.addEventListener("transitionend", updateTransition, true);
+        }
+        function updateTransition() {
+            var el = document.querySelector("div.slideLeft");
+
+            if (el) {
+                el.className = "slideRight";
+            } else {
+                el = document.querySelector("div.slideRight");
+                el.className = "slideLeft";
+            }
+
+            return el;
+        }
+    </script>
+</body>
+</html>

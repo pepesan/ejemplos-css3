@@ -1,0 +1,95 @@
+/*
+ * Diseño principal como de escritorio sin
+ * tamaños predefinidos y ancho del wrapper del 80% centrado
+ */
+body{
+	margin:0;
+	padding:0;
+}
+header{
+	background-color: grey;
+	text-align: center;
+	overflow: hidden;
+}
+
+section{
+	overflow: hidden;
+}
+article {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+	height: 400px;
+}
+
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+#column1 {
+	width: 100%;
+	background-color: #96c144;
+}
+#column2 {
+	width: 100%;
+	background-color: #6fa843;
+}
+#column3 {
+	width: 100%;
+	background-color: #cde0aa;
+}
+
+
+
+
+/*
+ * Tamaño de ancho de 480px
+*/
+@media screen and (min-width: 480px) {
+
+	#wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#column2 {
+
+		width: 50%;
+	}
+	#column3 {
+
+		width: 50%;
+	}
+}
+/*
+ * Ancho máximo de 640px
+*/
+@media screen and (min-width: 640px) {
+	#wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+/*
+ * Ancho máximo de 960px, se permite que las columnas 2 y 3 ocupen todo el ancho
+ * y perdemos las dos columnas
+ */
+@media screen and (min-width: 960px) {
+	#wrapper {
+		width: 80%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	#column1 {
+
+		width: 100%;
+	}
+
+}
+
+
+
+
