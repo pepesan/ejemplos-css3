@@ -19,6 +19,21 @@ Primer ejemplo
     margin: auto;  /* Magic! */
     background-color: blueviolet;
 }
+
+.base{
+    height: 100px; /* Or whatever */
+    margin: auto;  /* Magic! */
+    background-color: blueviolet;
+}
+
+.tercio {
+    width: 30%;  /* Or whatever */
+
+}
+.dostercios {
+    width: 60%;  /* Or whatever */
+
+}
 /*
 Segundo ejemplo
  */
